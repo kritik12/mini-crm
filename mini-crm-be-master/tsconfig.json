@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2016",                              /* Specify ECMAScript target version. */
+    "module": "commonjs",                            /* Use CommonJS module system for Node.js. */
+    "outDir": "./dist",                              /* Redirect output structure to this directory. */
+    "rootDir": "./src",                              /* Specify the root directory for source files. */
+
+    /* Module Resolution */
+    "esModuleInterop": true,                         /* Enable ES6 module interoperability for CommonJS. */
+    "resolveJsonModule": true,                       /* Allow importing JSON files. */
+     "types": ["node","express"],                    /* Include Node.js and Express type definitions. */
+     "typeRoots": [
+      "./node_modules/@types",
+      "./src/types"],
+
+    /* Strict Type Checking */
+    "strict": false,       
+    "noImplicitAny": true,                           /* Enable all strict type-checking options. */
+    "forceConsistentCasingInFileNames": true,        /* Enforce consistent casing in file names. */
+    "skipLibCheck": true,                            /* Skip checking .d.ts files. */
+
+    /* Source Map Options */
+    "sourceMap": true,                               /* Generate source map files for debugging. */
+
+    /* Additional Settings */
+    "allowSyntheticDefaultImports": true,           /* Allow default imports for CommonJS modules. */
+    "strictNullChecks": true,                        /* Strictly check `null` and `undefined`. */
+    "strictFunctionTypes": true                      /* Check function parameters for compatibility. */
+  },
+  "include": [
+    "src/**/*"                                       /* Include all TypeScript files in the src folder. */
+  ],
+  "exclude": [
+    "node_modules",                                  /* Exclude node_modules to avoid redundant type checking. */                                          /* Exclude output directory. */
+  ]
+}
